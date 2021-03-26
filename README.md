@@ -14,7 +14,7 @@ Current wireframe is desktop focused; mobile-focused layout is in the works.
 
 ## Component Hierarchy
 
-![imageAlt](https://i.imgur.com/4WspTnJ.png)
+![imageAlt](https://i.imgur.com/e53Ut6B.png)
 
 ## API and Data Sample
 
@@ -72,7 +72,7 @@ Current wireframe is desktop focused; mobile-focused layout is in the works.
 | Day      | Deliverable                                | Status   |
 | -------- | ------------------------------------------ | -------- |
 | Mar 25-26| Proposal Approval / Airtable Setup         | Incomplete |
-| Mar 27-28| Component Creation / Get, Set, Delete Data | Incomplete |
+| Mar 27-28| Component Creation / Get, Set              | Incomplete |
 | Mar 28   | CSS Styling                                | Incomplete |
 | Mar 29   | CSS Styling / MVP                          | Incomplete |
 | Mar 30-31| Advanced CSS/Testing                       | Incomplete |
@@ -90,15 +90,17 @@ Current wireframe is desktop focused; mobile-focused layout is in the works.
 ## SWOT Analysis
 
 ### Strengths:
-
+Create and Read will be the first and easiest part of CRUD 
+CSS Styling will be fun and challenging (hoping to integrate/research new styling techniques to make the page easy on the eyes)
 
 
 ### Weaknesses:
-
-
+Still have problem targeting specific information and Link/Routing so that when a user clicks on a image it will send them to a specific page based upon the ID of the tattoo object.
+BUTTONS
 
 ### Opportunities:
-
+To strengthen my weaknesses within React both conceptually and technically, work on being able to track my workflow.
+Looking to add a new fully fleshed out passion project that is marginally more complex than my first project.
 
 ### Threats:
-
+Sometimes I get stuck and throw my plan of attack out the window and start panic coding while not understanding what exactly my code or plan is doing
