@@ -84,7 +84,8 @@ Current wireframe is desktop focused; mobile-focused layout is in the works.
 | SWOT           |    H     |     1.5hrs     |      1.5      |
 | Airtable setup |    H     |     .5hrs      |       1       |
 | Rendering Imgs |    H     |       2        |     1.75      |
-| Routing        |    H     |      4hr       |
+| Routing        |    H     |      4hr       |     3.25      |
+
 
 ## SWOT Analysis
 

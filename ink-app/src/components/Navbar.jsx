@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div>
       <Link to="/">Home</Link>
-      <Link to="/">Ink Your Story</Link>
+      <Link to="/new">Ink Your Story</Link>
     </div>
   )
 }

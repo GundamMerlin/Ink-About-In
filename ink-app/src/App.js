@@ -5,6 +5,8 @@ import { baseURL, config } from "./services/index"
 import { useState, useEffect } from "react"
 import { Route } from "react-router-dom"
 import Tattoo from "./components/Tattoo"
+import Form from "./components/Form"
+import Details from "./components/Details"
 
 
 
@@ -15,7 +17,7 @@ function App() {
     getData();
   },[])
 
-  
+//Grabbing Data from API and storing in Response Variable
   async function getData() {
     let response = await axios.get(baseURL, config);
     setTattoos(response.data.records)
@@ -28,13 +30,19 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Route exact path="/">
-        <div>
+          <div>
         {tattoos.map((tattoo) => {
           return (
             <Tattoo
               tattoo={tattoo}>
             </Tattoo>)
         })}</div>
+        </Route>
+      <Route path ="/new">
+          <Form/>
+      </Route>
+      <Route path="/Details">
+        <Details/>
       </Route>
     </div>
   );
