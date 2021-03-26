@@ -95,7 +95,7 @@ CSS Styling will be fun and challenging (hoping to integrate/research new stylin
 
 
 ### Weaknesses:
-Still have problem targeting specific information and Link/Routing so that when a user clicks on a image it will send them to a specific page based upon the ID of the tattoo object.
+Still having problems targeting specific information and Link/Routing so that when a user clicks on a image it will send them to a specific page based upon the ID of the tattoo object.
 BUTTONS
 Not sure how to I'm going to display the images by (my plan was to display the images by descending create time so that most recently posted tattoo object displays first)
 
@@ -105,3 +105,4 @@ Looking to add a new fully fleshed out passion project that is marginally more c
 
 ### Threats:
 Sometimes I get stuck and throw my plan of attack out the window and start panic coding while not understanding what exactly my code or plan is doing
+Trying to shift my workflow and mentality high-low to a fluid slow burn build up.
