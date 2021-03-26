@@ -97,6 +97,7 @@ CSS Styling will be fun and challenging (hoping to integrate/research new stylin
 ### Weaknesses:
 Still have problem targeting specific information and Link/Routing so that when a user clicks on a image it will send them to a specific page based upon the ID of the tattoo object.
 BUTTONS
+Not sure how to I'm going to display the images by (my plan was to display the images by descending create time so that most recently posted tattoo object displays first)
 
 ### Opportunities:
 To strengthen my weaknesses within React both conceptually and technically, work on being able to track my workflow.
