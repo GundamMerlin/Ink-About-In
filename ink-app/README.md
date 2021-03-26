@@ -69,20 +69,22 @@ Current wireframe is desktop focused; mobile-focused layout is in the works.
 
 | Day       | Deliverable                        | Status     |
 | --------- | ---------------------------------- | ---------- |
-| Mar 25-26 | Proposal Approval / Airtable Setup | Incomplete |
-| Mar 27-28 | Component Creation / Get, Set      | Incomplete |
-| Mar 28    | CSS Styling                        | Incomplete |
+| Mar 25-26 | Proposal Approval / Airtable Setup | Complete   |
+| Mar 27-28 | Component Creation / Get, Set      | Inprogress |
+| Mar 28    | CSS Styling                        | Inprogress |
 | Mar 29    | CSS Styling / MVP                  | Incomplete |
 | Mar 30-31 | Advanced CSS/Testing               | Incomplete |
 | April 2   | Presentations                      | Incomplete |
 
 ## Timeframe and Priority Matrix
 
-| Component      | Priority | Estimated Time | Time Invested | Actual Time |
-| -------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal       |    H     |      2hrs      |               |             |
-| SWOT           |    H     |     1.5hrs     |               |             |
-| Airtable setup |    H     |     .5hrs      |               |             |
+| Component      | Priority | Estimated Time | Time Invested |
+| -------------- | :------: | :------------: | :-----------: |
+| Proposal       |    H     |      2hrs      |       2       |
+| SWOT           |    H     |     1.5hrs     |      1.5      |
+| Airtable setup |    H     |     .5hrs      |       1       |
+| Rendering Imgs |    H     |       2        |     1.75      |
+| Routing        |    H     |      4hr       |
 
 ## SWOT Analysis
 

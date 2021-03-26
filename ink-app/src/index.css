@@ -12,7 +12,8 @@ code {
     monospace;
 }
 
-/* #tattoo {
-  max-height: 250px;
-  max-width: 250px;
-} */
+img {
+  object-fit: cover;
+  width: 30%;
+  height: 50px;
+}
