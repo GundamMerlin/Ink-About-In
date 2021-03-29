@@ -11,11 +11,12 @@ import Details from "./components/Details"
 
 
 function App() {
-  const [tattoos, setTattoos] = useState([]);
+  const [tattoos, setTattoos] = useState([])
+  const [toggle, setToggle] = useState(true);
 
   useEffect(() => {
     getData();
-  },[])
+  },[toggle])
 
 //Grabbing Data from API and storing in Response Variable
   async function getData() {
@@ -41,8 +42,9 @@ function App() {
       <Route path ="/new">
         <Form tattoos={tattoos}/>
       </Route>
-      <Route path="/Details">
-        <Details/>
+      <Route path="/Details/:id">
+        <Details
+          tattoos={tattoos} setToggle={setToggle}/>
       </Route>
     </div>
   );
@@ -50,9 +52,3 @@ function App() {
 
 export default App;
 
-// Using find method ?
-// {tattoos.find((tattoo) => {
-//   return (<Details
-//   key = {tattoo.id}
-//   />)
-// })}
