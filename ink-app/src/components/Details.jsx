@@ -29,15 +29,19 @@ export default function Details(props) {
   
   function handleTest() {
     let testvar = params.id
-    data.map((tattoo) => {
-      if (params.id === tattoo.id) {
-        setFoundTattoo((prevState) => tattoo)
-        setIsLoading(false);
-      } else {
-        return null;
-      }
+    const found = data.find((tattoo) => params.id === tattoo.id)
+    console.log(found)
+    setFoundTattoo(found)
+    setIsLoading(false);
+    // data.map((tattoo) => {
+    //   if (params.id === tattoo.id) {
+    //     setFoundTattoo((prevState) => tattoo)
+    //     setIsLoading(false);
+    //   } else {
+    //     return null;
+    //   }
       
-    })
+    // })
 
     console.log(props.tattoos)
   }
@@ -46,7 +50,7 @@ export default function Details(props) {
     isLoading ?
       <div>Loading...</div>:
 
-      <div>
+      <div className="tattoo-details">
       {/* Display only 1 tattoo + info based on ID */}
         <h2>{foundTattoo.fields.title}</h2>
         <img src={foundTattoo.fields.image}></img>

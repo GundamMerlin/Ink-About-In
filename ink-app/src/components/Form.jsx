@@ -24,12 +24,13 @@ export default function Form(props) {
   //axios call to POST Data
   async function handleSubmit(e) {
     e.preventDefault();
-    await axios.post(baseURL,{fields: tattoo},config)
+    await axios.post(baseURL, { fields: tattoo }, config)
+    props.setToggle((prevState) => !prevState)
     history.push("/");
   }
   
   return (
-    <div>
+    <div className="form-container">
       <form onSubmit={handleSubmit}>
         
         <label htmlFor="title">Title</label>

@@ -7,9 +7,8 @@ export default function Tattoo(props) {
   
   return (
     <Link to={`/Details/${props.tattoo.id}`}>
-      <div id="tattoo">
+      <div className="tattoo-card">
         <img src={data.image}></img>
-        <h3>Click for more info</h3>
       </div>
     </Link>
   )

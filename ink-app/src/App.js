@@ -22,7 +22,7 @@ function App() {
   async function getData() {
     let response = await axios.get(baseURL, config);
     setTattoos(response.data.records)
-    console.log(response.data.records)
+    // console.log(response.data.records)
 }
 
 
@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Route exact path="/">
-          <div>
+          <div className="tattoo-grid">
         {tattoos.map((tattoo) => {
           return (
             <Tattoo
@@ -40,7 +40,7 @@ function App() {
         })}</div>
         </Route>
       <Route path ="/new">
-        <Form tattoos={tattoos}/>
+        <Form tattoos={tattoos} setToggle={setToggle}/>
       </Route>
       <Route path="/Details/:id">
         <Details
