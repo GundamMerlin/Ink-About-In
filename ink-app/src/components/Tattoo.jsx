@@ -6,7 +6,7 @@ export default function Tattoo(props) {
   let data = props.tattoo.fields;
   
   return (
-    <Link to="/Details/:id">
+    <Link to={`/Details/${props.tattoo.id}`}>
       <div id="tattoo">
         <img src={data.image}></img>
         <h3>Click for more info</h3>

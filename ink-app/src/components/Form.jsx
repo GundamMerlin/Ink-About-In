@@ -3,7 +3,8 @@ import {Link,Route} from "react-router-dom"
 import Tattoo from './Tattoo'
 import { baseURL, config } from "../services"
 import {useState} from "react"
-
+import axios from 'axios'
+import {useHistory} from "react-router-dom"
 
 
 
@@ -11,39 +12,62 @@ export default function Form(props) {
   let [tattoo, setTattoo] = useState({
     title: "",
     image: "",
-    story:"",
-  })
-  //axios call to Put Data
+    story: "",
+  });
+  const history = useHistory();
+
+  function handleChange(e) {
+    let { name, value } = e.target;
+    setTattoo((prevState) => ({ ...prevState, [name]: value}));
+  }
   
+  //axios call to POST Data
+  async function handleSubmit(e) {
+    e.preventDefault();
+    await axios.post(baseURL,{fields: tattoo},config)
+    history.push("/");
+  }
   
   return (
-    <Link to ="/new">
-      
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         
-        <label>
+        <label htmlFor="title">Title</label>
           <input
-          type="text">
+            type="text"
+            name="title"
+            required
+          value={tattoo.title}
+          onChange={handleChange}
+          >
           </input>
-        </label>
-        
-        <label>
+        <label htmlFor="image">Upload Image URL</label>  
           <input
-          type="text">
+          type="text"
+          name="image"
+          required
+          value={tattoo.image}
+          onChange={handleChange}
+          >
           </input>
-        </label>  
         
-        <label>
-          <textarea rows="25" cols="100" type="text">
-
+        <label htmlFor="story"></label>
+        <textarea
+          rows="25"
+          cols="100"
+          type="text"
+          name="story"
+          placeholder="Tell us your story"
+          required
+          value={tattoo.story}
+          onChange={handleChange}
+        >
           </textarea>
-        </label>
         
-       
+        
+       <input type="submit"/>
       </form>
-      
-    </div>
-    </Link>
+  </div>
+    
   )
 }

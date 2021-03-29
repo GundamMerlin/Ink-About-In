@@ -39,7 +39,7 @@ function App() {
         })}</div>
         </Route>
       <Route path ="/new">
-          <Form/>
+        <Form tattoos={tattoos}/>
       </Route>
       <Route path="/Details">
         <Details/>
@@ -49,3 +49,10 @@ function App() {
 }
 
 export default App;
+
+// Using find method ?
+// {tattoos.find((tattoo) => {
+//   return (<Details
+//   key = {tattoo.id}
+//   />)
+// })}
