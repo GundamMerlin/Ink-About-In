@@ -20,12 +20,42 @@ code {
   background-color: #e6e8e6;
 }
 
+button {
+  background-color: #98dfaf;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.submit-button {
+  background-color: #deefb7;
+  border: none;
+  color: #161925;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
 .tattoo-grid {
-  margin-top: 200px;
+  margin-top: 150px;
   margin-left: 50px;
   margin-right: 50px;
+  margin-bottom: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-bottom: 150px;
+}
+
+.tattoo-card a {
+  display: block;
 }
 
 .tattoo-card img {
@@ -33,8 +63,11 @@ code {
   width: 250px;
   height: 250px;
   border-radius: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
+  box-shadow: 7px 10px 41px -11px rgba(0, 0, 0, 0.56);
+}
+
+.tattoo-details h2 {
+  font-family: "Cedarville Cursive", cursive;
 }
 .tattoo-details img {
   width: 300px;
@@ -44,11 +77,30 @@ code {
 .tattoo-details p {
   margin-left: 30%;
   margin-right: 30%;
+  
+}
+
+.tattoo-details {
+  padding-bottom: 200px;
 }
 
 .form-container form {
-  padding: 30%;
+  margin: 40px 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.form-container textarea {
+  resize: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: #98dfaf;
 }

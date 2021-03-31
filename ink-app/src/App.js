@@ -7,6 +7,8 @@ import { Route } from "react-router-dom"
 import Tattoo from "./components/Tattoo"
 import Form from "./components/Form"
 import Details from "./components/Details"
+import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
 
 
 
@@ -31,13 +33,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Route exact path="/">
-          <div className="tattoo-grid">
-        {tattoos.map((tattoo) => {
-          return (
-            <Tattoo
-              tattoo={tattoo}>
-            </Tattoo>)
-        })}</div>
+        <Gallery tattoos={tattoos}/>
         </Route>
       <Route path ="/new">
         <Form tattoos={tattoos} setToggle={setToggle}/>
@@ -46,6 +42,7 @@ function App() {
         <Details
           tattoos={tattoos} setToggle={setToggle}/>
       </Route>
+      <Footer></Footer>
     </div>
   );
 }

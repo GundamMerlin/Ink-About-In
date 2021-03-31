@@ -1,6 +1,4 @@
 import React from 'react'
-import {Link,Route} from "react-router-dom"
-import Tattoo from './Tattoo'
 import { baseURL, config } from "../services"
 import {useState} from "react"
 import axios from 'axios'
@@ -21,7 +19,6 @@ export default function Form(props) {
     setTattoo((prevState) => ({ ...prevState, [name]: value}));
   }
   
-  //axios call to POST Data
   async function handleSubmit(e) {
     e.preventDefault();
     await axios.post(baseURL, { fields: tattoo }, config)
@@ -32,26 +29,24 @@ export default function Form(props) {
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
-        
         <label htmlFor="title">Title</label>
           <input
             type="text"
             name="title"
             required
           value={tattoo.title}
-          onChange={handleChange}
-          >
-          </input>
+          onChange={handleChange}>
+        </input>
+        <br></br>
         <label htmlFor="image">Upload Image URL</label>  
           <input
           type="text"
           name="image"
           required
           value={tattoo.image}
-          onChange={handleChange}
-          >
-          </input>
-        
+          onChange={handleChange}>
+        </input>
+        <br></br>
         <label htmlFor="story"></label>
         <textarea
           rows="25"
@@ -61,14 +56,11 @@ export default function Form(props) {
           placeholder="Tell us your story"
           required
           value={tattoo.story}
-          onChange={handleChange}
-        >
-          </textarea>
-        
-        
-       <input type="submit"/>
+          onChange={handleChange}>
+        </textarea>
+        <br></br>
+       <input className ="submit-button" type="submit"/>
       </form>
   </div>
-    
   )
 }
