@@ -71,8 +71,8 @@ Current wireframe is desktop focused; mobile-focused layout is in the works.
 | --------- | ---------------------------------- | ---------- |
 | Mar 25-26 | Proposal Approval / Airtable Setup | Complete   |
 | Mar 27-28 | Components for Get, Post,Delete    | Complete   |
-| Mar 28    | CSS Styling                        | Inprogress |
-| Mar 29    | CSS Styling / MVP                  | Incomplete |
+| Mar 28    | CSS Styling                        | Complete   |
+| Mar 29    | CSS Styling / MVP                  | Complete   |
 | Mar 30-31 | Advanced CSS/Testing               | Incomplete |
 | April 2   | Presentations                      | Incomplete |
 
@@ -80,15 +80,17 @@ Current wireframe is desktop focused; mobile-focused layout is in the works.
 
 | Component      | Priority | Estimated Time | Time Invested |
 | -------------- | :------: | :------------: | :-----------: |
-| Proposal       |    H     |      2hrs      |       2       |
-| SWOT           |    H     |     1.5hrs     |      1.5      |
-| Airtable setup |    H     |     .5hrs      |       1       |
-| Rendering Imgs |    H     |       2        |     1.75      |
-| Routing        |    H     |      4hr       |     3.25      |
+| Proposal       |    H     |      2hrs      |      2        |
+| SWOT           |    H     |    1.5hrs      |      1.5      |
+| Airtable setup |    H     |     .5hrs      |      1        |
+| Rendering Imgs |    H     |      2hrs      |      1.75     |
+| Routing        |    H     |      4hrs      |      3.25     |
 | Building Get   |    H     |      1hr       |      1        |
-| Building Post  |    H     |       3hr      |      3.5      |
-| Building Delete|    H     |       3hr      |       4       |
-
+| Building Post  |    H     |      3hrs      |      3.5      |
+| Building Delete|    H     |      3hrs      |      4        |
+|Refactoring Code|    H     |      2hrs      |
+| CSS Styling    |    H     |      4hrs      |               |
+| Debugging      |    H     |      10hrs     |               |
 ## SWOT Analysis
 
 ### Strengths:

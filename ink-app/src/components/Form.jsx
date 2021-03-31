@@ -30,25 +30,28 @@ export default function Form(props) {
     <div className="form-container">
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">Title</label>
-          <input
+        <input
+            className="title-form"
             type="text"
             name="title"
             required
-          value={tattoo.title}
-          onChange={handleChange}>
+            value={tattoo.title}
+            onChange={handleChange}>
         </input>
         <br></br>
         <label htmlFor="image">Upload Image URL</label>  
           <input
-          type="text"
-          name="image"
-          required
-          value={tattoo.image}
-          onChange={handleChange}>
+            className="url-form"
+            type="text"
+            name="image"
+            required
+            value={tattoo.image}
+            onChange={handleChange}>
         </input>
         <br></br>
         <label htmlFor="story"></label>
         <textarea
+          className="story-form"
           rows="25"
           cols="100"
           type="text"

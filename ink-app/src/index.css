@@ -13,6 +13,11 @@ code {
     monospace;
 }
 
+label {
+  font-family: "New Tegomin", serif;
+  font-weight: 900;
+}
+
 .Nav {
   padding: 100px;
   display: flex;
@@ -44,14 +49,16 @@ button {
 }
 
 .tattoo-grid {
+  position: relative;
   margin-top: 150px;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-bottom: 150px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* flex-wrap: wrap;
+  justify-content: space-evenly; */
+  /* padding-bottom: 150px; */
 }
 
 .tattoo-card a {
@@ -77,13 +84,27 @@ button {
 .tattoo-details p {
   margin-left: 30%;
   margin-right: 30%;
-  
+  font-family: "New Tegomin", serif;
+  font-weight: 900;
 }
 
 .tattoo-details {
   padding-bottom: 200px;
 }
 
+.title-form {
+  border-radius: 10px;
+  text-align: center;
+}
+
+.url-form {
+  border-radius: 10px;
+  text-align: center;
+}
+
+.story-from {
+  border-radius: 10px;
+}
 .form-container form {
   margin: 40px 30%;
   display: flex;
@@ -103,4 +124,25 @@ button {
   text-align: center;
   width: 100%;
   background-color: #98dfaf;
+}
+
+@media only screen and (max-width: 600px) {
+  .Nav {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e6e8e6;
+  }
+
+  .tattoo-grid {
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 150px;
+  }
 }
