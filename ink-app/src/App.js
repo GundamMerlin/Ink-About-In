@@ -4,11 +4,11 @@ import axios from "axios"
 import { baseURL, config } from "./services/index"
 import { useState, useEffect } from "react"
 import { Route } from "react-router-dom"
-import Tattoo from "./components/Tattoo"
 import Form from "./components/Form"
 import Details from "./components/Details"
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
+import qs from 'qs'
 
 
 
@@ -22,9 +22,10 @@ function App() {
 
 //Grabbing Data from API and storing in Response Variable
   async function getData() {
-    let response = await axios.get(baseURL, config);
+    let queryParams = qs.stringify({sort:[{field: "Created" ,direction: 'desc'}]})
+    let response = await axios.get(`${baseURL}?${queryParams}`, config,);
     setTattoos(response.data.records)
-    // console.log(response.data.records)
+
 }
 
 
@@ -42,7 +43,7 @@ function App() {
         <Details
           tattoos={tattoos} setToggle={setToggle}/>
       </Route>
-      <Footer></Footer>
+      <Footer/>
     </div>
     
     
