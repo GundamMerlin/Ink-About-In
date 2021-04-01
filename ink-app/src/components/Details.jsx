@@ -23,10 +23,8 @@ export default function Details(props) {
   }, [props])
   
  async function handleFind() {
-    // const found = data.find((tattoo) => params.id === tattoo.id)
    const response = await axios.get(`${baseURL}/${params.id}`, config)
     setFoundTattoo(response.data)
-    // setIsLoading(false);
   }
   
   return (

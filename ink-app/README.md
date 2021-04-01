@@ -64,6 +64,12 @@ Current wireframe is desktop focused; mobile-focused layout is in the works.
 - Achieve clean minimalist style in CSS with some shadowing and card styling so reading medium-long posts is intuitive and viable on all platforms
 
 #### PostMVP
+- Collaborate with UX Design specialist
+- Add feature to upload image from local storage
+- Add up/down vote feature
+- Display most upvoted tattoo and story on main page
+- Add links to artist (if applicable)
+- 
 
 ## Project Schedule
 
@@ -73,24 +79,26 @@ Current wireframe is desktop focused; mobile-focused layout is in the works.
 | Mar 27-28 | Components for Get, Post,Delete    | Complete   |
 | Mar 28    | CSS Styling                        | Complete   |
 | Mar 29    | CSS Styling / MVP                  | Complete   |
-| Mar 30-31 | Advanced CSS/Testing               | Incomplete |
+| Mar 30-31 | Advanced CSS/Testing               | Complete   |
 | April 2   | Presentations                      | Incomplete |
 
 ## Timeframe and Priority Matrix
 
-| Component      | Priority | Estimated Time | Time Invested |
-| -------------- | :------: | :------------: | :-----------: |
-| Proposal       |    H     |      2hrs      |      2        |
-| SWOT           |    H     |    1.5hrs      |      1.5      |
-| Airtable setup |    H     |     .5hrs      |      1        |
-| Rendering Imgs |    H     |      2hrs      |      1.75     |
-| Routing        |    H     |      4hrs      |      3.25     |
-| Building Get   |    H     |      1hr       |      1        |
-| Building Post  |    H     |      3hrs      |      3.5      |
-| Building Delete|    H     |      3hrs      |      4        |
-|Refactoring Code|    H     |      2hrs      |      3        |
-| CSS Styling    |    H     |      4hrs      |      4        |
-| Debugging      |    H     |      10hrs     |      3        |
+| Component        | Priority | Estimated Time | Time Invested |
+| ---------------- | :------: | :------------: | :-----------: |
+| Proposal         |    H     |      2hrs      |       2       |
+| SWOT             |    H     |     1.5hrs     |      1.5      |
+| Airtable setup   |    H     |     .5hrs      |       1       |
+| Rendering Imgs   |    H     |      2hrs      |     1.75      |
+| Routing          |    H     |      4hrs      |     3.25      |
+| Building Get     |    H     |      1hr       |       1       |
+| Building Post    |    H     |      3hrs      |      3.5      |
+| Building Delete  |    H     |      3hrs      |       4       |
+| Refactoring Code |    H     |      3hrs      |       3       |
+| CSS Styling      |    H     |      7hrs      |       4       |
+| Debugging        |    H     |     10hrs      |       6       |
+| Totals           |    L     |      41.5      |      30       |
+
 ## SWOT Analysis
 
 ### Strengths:
