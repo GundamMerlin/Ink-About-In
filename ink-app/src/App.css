@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #524948;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 label {
   font-family: "New Tegomin", serif;
   font-weight: 900;
@@ -20,7 +35,7 @@ label {
 
 button {
   background-color: #98dfaf;
-  border: none;
+  border-radius: 20px;
   color: white;
   padding: 15px 32px;
   text-align: center;
