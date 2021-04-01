@@ -6,10 +6,9 @@ import {useEffect, useState} from "react"
 
 export default function Details(props) {
   const [foundTattoo, setFoundTattoo] = useState({});
-  // const [isLoading, setIsLoading] = useState(true);
   let params = useParams();
   let history = useHistory();
-  // let data = props.tattoos;
+  
 
   async function handleDelete() {
     let deleteURL = `${baseURL}/${params.id}`
