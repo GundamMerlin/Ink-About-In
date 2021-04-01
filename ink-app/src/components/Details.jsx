@@ -19,7 +19,7 @@ export default function Details(props) {
 }
   useEffect(() => {
     handleFind();
-  }, [props])
+  }, [])
   
  async function handleFind() {
    const response = await axios.get(`${baseURL}/${params.id}`, config)
@@ -32,7 +32,7 @@ export default function Details(props) {
         foundTattoo ?
           <div className="tattoo-details">
             <h2>{foundTattoo.fields.title}</h2>
-            <img src={foundTattoo.fields.image}></img>
+            <img src={foundTattoo.fields.image} alt={foundTattoo.fields.title}></img>
             <p>{foundTattoo.fields.story}</p>
             <button onClick={handleDelete} type="submit">Delete</button>
           </div>:
