@@ -20,7 +20,7 @@ function App() {
     getData();
   },[toggle])
 
-//Grabbing Data from API and storing in Response Variable
+
   async function getData() {
     let queryParams = qs.stringify({sort:[{field: "Created" ,direction: 'desc'}]})
     let response = await axios.get(`${baseURL}?${queryParams}`, config,);

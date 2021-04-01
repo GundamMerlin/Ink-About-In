@@ -88,9 +88,9 @@ Current wireframe is desktop focused; mobile-focused layout is in the works.
 | Building Get   |    H     |      1hr       |      1        |
 | Building Post  |    H     |      3hrs      |      3.5      |
 | Building Delete|    H     |      3hrs      |      4        |
-|Refactoring Code|    H     |      2hrs      |
-| CSS Styling    |    H     |      4hrs      |               |
-| Debugging      |    H     |      10hrs     |               |
+|Refactoring Code|    H     |      2hrs      |      3        |
+| CSS Styling    |    H     |      4hrs      |      4        |
+| Debugging      |    H     |      10hrs     |      3        |
 ## SWOT Analysis
 
 ### Strengths:
