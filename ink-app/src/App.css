@@ -8,10 +8,14 @@ label {
 }
 
 .Nav {
-  padding: 100px;
+  padding: 200px;
   display: flex;
   justify-content: space-between;
+  background-image: url("https://res.cloudinary.com/grohealth/image/upload/f_auto,fl_lossy,q_auto/v1583769572/DCUK/Content/iStock-669911398-2048x1368.jpg");
   background-color: #e6e8e6;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
 }
 
 button {
@@ -57,6 +61,7 @@ button {
   height: 250px;
   border-radius: 20px;
   box-shadow: 7px 10px 41px -11px rgba(0, 0, 0, 0.56);
+  margin-bottom: 20px;
 }
 
 .tattoo-details h2 {

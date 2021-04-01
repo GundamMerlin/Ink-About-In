@@ -41,7 +41,7 @@ function App() {
       </Route>
       <Route path="/Details/:id">
         <Details
-          tattoos={tattoos} setToggle={setToggle}/>
+           setToggle={setToggle} />
       </Route>
       <Footer/>
     </div>

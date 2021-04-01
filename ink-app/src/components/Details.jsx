@@ -6,10 +6,10 @@ import {useEffect, useState} from "react"
 
 export default function Details(props) {
   const [foundTattoo, setFoundTattoo] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
   let params = useParams();
   let history = useHistory();
-  let data = props.tattoos;
+  // let data = props.tattoos;
 
   async function handleDelete() {
     let deleteURL = `${baseURL}/${params.id}`
@@ -19,17 +19,18 @@ export default function Details(props) {
     
 }
   useEffect(() => {
-    handleTest();
+    handleFind();
   }, [props])
   
-  function handleTest() {
-    const found = data.find((tattoo) => params.id === tattoo.id)
-    setFoundTattoo(found)
-    setIsLoading(false);
+ async function handleFind() {
+    // const found = data.find((tattoo) => params.id === tattoo.id)
+   const response = await axios.get(`${baseURL}/${params.id}`, config)
+    setFoundTattoo(response.data)
+    // setIsLoading(false);
   }
   
   return (
-      isLoading ?
+      !foundTattoo.fields ?
       <div>Loading...</div>:
         foundTattoo ?
           <div className="tattoo-details">
